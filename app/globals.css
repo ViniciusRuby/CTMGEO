@@ -1,0 +1,147 @@
+:root {
+  /* Cores do Design System CTMGEO */
+  --color-primary: #0E7AC4;
+  --color-primary-dark: #095A94;
+  --color-dark: #16181D;
+  --color-text: #333333;
+  --color-text-muted: #6C757D;
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F7F9FB;
+  --color-border: #E5E7EB;
+  --color-accent-red: #E8543C;
+  --color-accent-green: #4CAF50;
+  --color-success: #2E7D32;
+
+  /* Efeitos modernos */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 25px -3px rgba(14, 122, 196, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 20px 30px -10px rgba(14, 122, 196, 0.15);
+
+  /* Espaçamentos */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  /* Transição padrão */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* Container */
+  --container-max-desktop: 1200px;
+}
+
+/* Reset básico e tipografia */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--color-dark);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Container responsivo padronizado */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 720px;
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-max-desktop);
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+/* Utilitário de acessibilidade para leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Foco visível acessível */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
