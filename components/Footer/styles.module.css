@@ -1,0 +1,190 @@
+.footer {
+  background-color: var(--color-dark);
+  color: #EEECFF;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* Coluna da Marca */
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.logoWrapper {
+  margin-bottom: var(--space-2);
+}
+
+.footerLogo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.brandSlogan {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.brandBadge {
+  font-size: 13px;
+  color: rgba(238, 236, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: var(--space-2);
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #EEECFF;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all var(--transition-fast);
+}
+
+.socialButton:hover {
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+/* Colunas de Conteúdo e Contato */
+.infoCol,
+.contactCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.colTitle {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.address {
+  font-style: normal;
+}
+
+.addressLine {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(238, 236, 255, 0.7);
+  line-height: 1.6;
+}
+
+.contactList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(238, 236, 255, 0.7);
+  transition: color var(--transition-fast);
+}
+
+.contactLink:hover {
+  color: #81F3E5;
+}
+
+.infoIcon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* Barra Inferior */
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.copyrightText {
+  font-size: 13px;
+  color: rgba(238, 236, 255, 0.6);
+}
+
+.legalList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.legalLink {
+  font-size: 13px;
+  color: rgba(238, 236, 255, 0.6);
+  transition: color var(--transition-fast);
+}
+
+.legalLink:hover {
+  color: #81F3E5;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-6);
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .legalList {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
