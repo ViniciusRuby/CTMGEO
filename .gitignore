@@ -27,5 +27,8 @@ yarn-error.log*
 
 # Arquivos brutos de extração legada
 CTMGEO - Soluções em Geotecnologias*
-01-prompt-construcao-site.md
-regras_de_negocio.mdvinicius.md
+
+# Arquivos pessoais de prompt e estudo
+*prompt*.md
+*regras_de_negocio*.md
+vinicius.md

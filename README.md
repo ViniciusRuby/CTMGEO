@@ -49,6 +49,45 @@ A página foi construída como rota única (`/`), puramente estática e sem depe
 
 ---
 
+## 📸 Demonstração Visual do Sistema (Screenshots)
+
+Confira abaixo as capturas reais da aplicação em funcionamento:
+
+### 🖥️ Visão Desktop
+
+#### 1. Header, Topbar & Hero Section (Vídeo Institucional 16:9)
+![Hero Section e Apresentação](docs/screenshots/01-hero-desktop.png)
+
+#### 2. Banner CTA & Pilares Metodológicos (Estratégia, Planejamento, Execução e Nosso Trabalho)
+![Banner CTA e Pilares com Bordas Redondas](docs/screenshots/02-cta-pilares.png)
+
+#### 3. Nossos Diferenciais & Destaque GeoCidadão (App para o Cidadão)
+![Diferenciais e Destaque GeoCidadão](docs/screenshots/03-diferenciais.png)
+
+#### 4. Clientes Atendidos (Mais de 40 municípios e Brasões Oficiais)
+![Clientes e Prefeituras](docs/screenshots/04-clientes-prefeituras.png)
+
+#### 5. Últimas Notícias & Blog Institucional (Badges de Data)
+![Notícias com Badges de Data](docs/screenshots/05-noticias-blog.png)
+
+#### 6. Prova Social & Depoimentos de Gestores Municipais (Guaíra e Bonito)
+![Depoimentos de Gestores Públicos](docs/screenshots/06-depoimentos.png)
+
+#### 7. Newsletter Interativa com Faixa "Fique ligado!" e Estado de Sucesso
+![Newsletter com Faixa Fique Ligado e Estado de Sucesso](docs/screenshots/07-newsletter-sucesso.png)
+
+#### 8. Rodapé Institucional com Logotipo em Cores Autênticas e Aviso Legal
+![Rodapé com Logo e Isenção](docs/screenshots/08-footer-institucional.png)
+
+---
+
+### 📱 Experiência Mobile First
+
+#### 9. Menu Gaveta Responsivo e Adaptação Fluida para Telas Menores
+![Visualização Mobile e Menu Hambúrguer](docs/screenshots/09-mobile-responsivo.png)
+
+---
+
 ## 🛠️ Stack Tecnológica & Padrões de Código
 
 - **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
@@ -69,29 +108,33 @@ A página foi construída como rota única (`/`), puramente estática e sem depe
 CTMGEO/
 ├── app/
 │   ├── globals.css                # CSS Variables, resets e tokens do design system
-│   ├── layout.tsx                 # Metadados SEO, fontes Poppins & Inter, layout base
-│   └── page.tsx                   # Composição semântica da landing page
+│   ├── layout.tsx                 # Metadados SEO, fontes Poppins, Inter & Caveat, layout base
+│   ├── page.tsx                   # Composição semântica da landing page
+│   ├── icon.png                   # Favicon oficial do navegador
+│   └── apple-icon.png             # Ícone para dispositivos Apple
 ├── components/
 │   ├── Header/                    # Topbar, Navbar, menu mobile e redes sociais
 │   ├── Hero/                      # Vídeo institucional 16:9 com glow sutil
-│   ├── CtaBanner/                 # Banner azul, 3 pilares e card de trabalho
+│   ├── CtaBanner/                 # Banner azul, 3 pilares redondos e card de trabalho
 │   ├── DiferenciaisSection/       # Grid de 6 diferenciais + card GeoCidadão
 │   ├── ClientesSection/           # Selo de autoridade e grid de brasões
 │   ├── NoticiasSection/           # 6 notícias com data em badge e resumos
 │   ├── DepoimentosSection/        # Citações de Guaíra e Bonito com aspas decorativas
-│   ├── NewsletterForm/            # Formulário acessível com feedback de sucesso
-│   └── Footer/                    # Rodapé escuro com 3 colunas e dados cadastrais
+│   ├── NewsletterForm/            # Formulário acessível com faixa "Fique ligado!" e feedback
+│   ├── ScrollEffects/             # Barra de progresso, reveal e voltar ao topo
+│   └── Footer/                    # Rodapé escuro com logo autêntico e disclaimer legal
 ├── data/                          # Camada de dados centralizada (sem hardcode em JSX)
 │   ├── empresa.ts
 │   ├── diferenciais.ts
 │   ├── clientes.ts
 │   ├── noticias.ts
 │   └── depoimentos.ts
-├── docs/                          # Especificações e regras de negócio
+├── docs/                          # Documentação visual e capturas de tela
 │   ├── design_system.md
-│   ├── regras_de_negocio.md
-│   └── 01-prompt-construcao-site.md
+│   └── screenshots/               # Galeria visual do sistema em execução
 ├── public/
+│   ├── favicon.ico
+│   ├── icon.png
 │   └── img/
 │       ├── logo.png
 │       ├── clientes/ (brasões oficiais)
