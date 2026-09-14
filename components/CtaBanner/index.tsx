@@ -34,22 +34,33 @@ export default function CtaBanner() {
 
         <div className={styles.pillarsGrid}>
           <div className={styles.pillarsList}>
-            {ctaBanner.pilares.map((pilar) => (
-              <div key={pilar.titulo} className={styles.pillarCard}>
-                <div className={styles.pillarIconContainer}>
-                  <Image
-                    src={pilar.iconeSrc}
-                    alt=""
-                    aria-hidden="true"
-                    width={72}
-                    height={72}
-                    className={styles.pillarIcon}
-                  />
+            {ctaBanner.pilares.map((pilar) => {
+              const isRoundItem = pilar.titulo === "Estratégia" || pilar.titulo === "Execução";
+              return (
+                <div
+                  key={pilar.titulo}
+                  className={`${styles.pillarCard} ${isRoundItem ? styles.pillarCardSpecial : ""}`}
+                >
+                  <div
+                    className={`${styles.pillarIconContainer} ${
+                      isRoundItem ? styles.pillarCircleFrame : styles.pillarIconFrame
+                    }`}
+                  >
+                    <Image
+                      src={pilar.iconeSrc}
+                      alt={`Ilustração do pilar ${pilar.titulo}`}
+                      width={130}
+                      height={130}
+                      className={`${styles.pillarIcon} ${
+                        isRoundItem ? styles.pillarRoundImage : ""
+                      }`}
+                    />
+                  </div>
+                  <h3 className={styles.pillarTitle}>{pilar.titulo}</h3>
+                  <p className={styles.pillarDesc}>{pilar.descricao}</p>
                 </div>
-                <h3 className={styles.pillarTitle}>{pilar.titulo}</h3>
-                <p className={styles.pillarDesc}>{pilar.descricao}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className={styles.workCardWrapper}>

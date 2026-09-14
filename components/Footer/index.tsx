@@ -21,12 +21,12 @@ export default function Footer() {
           {/* Coluna 1: Marca & Missão */}
           <div className={styles.brandCol}>
             <div className={styles.logoWrapper}>
-              <a href="#hero" aria-label="CTMGEO Home">
+              <a href="#hero" aria-label="CTMGEO Home" className={styles.logoBadge}>
                 <Image
                   src="/img/logo.png"
-                  alt="Logotipo CTMGEO"
-                  width={200}
-                  height={66}
+                  alt="Logotipo CTMGEO - Soluções em Geotecnologias"
+                  width={210}
+                  height={70}
                   className={styles.footerLogo}
                 />
               </a>

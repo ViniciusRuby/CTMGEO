@@ -34,14 +34,29 @@
 }
 
 .logoWrapper {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.logoBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.logoBadge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 
 .footerLogo {
-  height: 48px;
+  height: 44px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
 }
 
 .brandSlogan {
