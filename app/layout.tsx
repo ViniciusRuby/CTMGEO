@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Poppins, Inter, Caveat } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -16,10 +16,22 @@ const inter = Inter({
   display: "swap",
 });
 
+const caveat = Caveat({
+  weight: ["600", "700"],
+  subsets: ["latin"],
+  variable: "--font-caveat",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "CTMGEO - Soluções em Geotecnologias | Sua Cidade Inteligente",
   description:
     "Soluções em geotecnologias para prefeituras municipais. SigWEB, recadastramento imobiliário, inovação fiscal e gestão urbana moderna com mais de 40 municípios atendidos.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
   keywords: [
     "CTMGEO",
     "Geotecnologia",
@@ -31,7 +43,7 @@ export const metadata: Metadata = {
     "Cascavel",
     "Cidade Inteligente",
   ],
-  authors: [{ name: "CTMGEO" }],
+  authors: [{ name: "CTMGEO" }, { name: "Vinícius Rubira" }],
   openGraph: {
     title: "CTMGEO - Soluções em Geotecnologias",
     description:
@@ -47,7 +59,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${poppins.variable} ${inter.variable}`}>
+    <html
+      lang="pt-BR"
+      className={`${poppins.variable} ${inter.variable} ${caveat.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

@@ -1,0 +1,47 @@
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent-green) 50%, #81F3E5 100%);
+  z-index: 9999;
+  transition: width 100ms ease-out;
+  pointer-events: none;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(14, 122, 196, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  z-index: 90;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity var(--transition-normal), visibility var(--transition-normal), transform var(--transition-normal), background-color var(--transition-fast);
+}
+
+.backToTopVisible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.backToTop:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(14, 122, 196, 0.45);
+}
+
+.backToTop:active {
+  transform: scale(0.95);
+}

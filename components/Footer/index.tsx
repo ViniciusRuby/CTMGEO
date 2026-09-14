@@ -21,6 +21,9 @@ export default function Footer() {
           {/* Coluna 1: Marca & Missão */}
           <div className={styles.brandCol}>
             <div className={styles.logoWrapper}>
+              <div className={styles.ribbon}>
+                <span className={styles.ribbonText}>Fique ligado!</span>
+              </div>
               <a href="#hero" aria-label="CTMGEO Home" className={styles.logoBadge}>
                 <Image
                   src="/img/logo.png"
@@ -110,6 +113,31 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Aviso de Redesign e Isenção de Responsabilidade */}
+        <div className={styles.disclaimerBox}>
+          <p className={styles.disclaimerText}>
+            <strong>Redesign Institucional:</strong> Projeto conceitual desenvolvido por{" "}
+            <a
+              href="https://github.com/ViniciusRuby"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.authorLink}
+            >
+              Vinícius Rubira
+            </a>
+            , inspirado na excelência técnica da{" "}
+            <a
+              href="https://www.ctmgeo.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.officialLink}
+            >
+              CTMGEO — Soluções em Geotecnologias (site oficial: www.ctmgeo.com.br)
+            </a>
+            . Todos os direitos sobre marcas, softwares e conteúdos originais pertencem integralmente à CTMGEO.
+          </p>
         </div>
 
         {/* Linha Inferior com Links Legais e Copyright */}

@@ -34,7 +34,32 @@
 }
 
 .logoWrapper {
+  position: relative;
   margin-bottom: var(--space-4);
+  margin-top: 14px;
+  display: inline-block;
+}
+
+.ribbon {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: 4px 14px 3px 12px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  z-index: 5;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ribbonText {
+  font-family: var(--font-caveat), cursive, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  display: block;
 }
 
 .logoBadge {
@@ -152,6 +177,44 @@
 .infoIcon {
   color: var(--color-primary);
   flex-shrink: 0;
+}
+
+/* Caixa de Isenção e Autoria */
+.disclaimerBox {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-top: var(--space-2);
+}
+
+.disclaimerText {
+  font-size: 12px;
+  color: rgba(238, 236, 255, 0.7);
+  line-height: 1.6;
+}
+
+.authorLink {
+  color: #81F3E5;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.authorLink:hover {
+  color: #ffffff;
+}
+
+.officialLink {
+  color: #81F3E5;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.officialLink:hover {
+  color: #ffffff;
 }
 
 /* Barra Inferior */

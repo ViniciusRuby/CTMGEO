@@ -8,10 +8,12 @@ import NoticiasSection from "@/components/NoticiasSection";
 import DepoimentosSection from "@/components/DepoimentosSection";
 import NewsletterForm from "@/components/NewsletterForm";
 import Footer from "@/components/Footer";
+import ScrollEffects from "@/components/ScrollEffects";
 
 export default function Home() {
   return (
     <>
+      <ScrollEffects />
       <Header />
       <main id="main-content">
         <Hero />

@@ -164,6 +164,16 @@ Desenvolvido por **Lucas Alves Rubira (ViniciusRuby)**
 
 ---
 
+## ⚖️ Aviso Legal & Direitos de Marca
+
+Este projeto é um **redesign conceitual independente para portfólio**, desenvolvido com o objetivo exclusivo de demonstrar proficiência técnica em engenharia de software front-end e design de interfaces modernas para apresentação profissional.
+
+- **Autoria do Redesign:** [Vinícius Rubira](https://github.com/ViniciusRuby)
+- **Marca e Direitos Originais:** Todos os direitos de propriedade intelectual, patentes de software, logomarca e conteúdos institucionais pertencem integralmente à **[CTMGEO — Soluções em Geotecnologias](https://www.ctmgeo.com.br)**.
+- **Website Oficial da Empresa:** [https://www.ctmgeo.com.br](https://www.ctmgeo.com.br)
+
+---
+
 ## 📄 Licença
 
 Este projeto está sob a licença **MIT** — veja o arquivo [LICENSE](LICENSE) para detalhes.

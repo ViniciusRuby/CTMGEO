@@ -34,6 +34,10 @@ export default function NewsletterForm() {
     <section className={styles.section} aria-labelledby="newsletter-heading">
       <div className={`container ${styles.container}`}>
         <div className={styles.newsletterCard}>
+          <div className={styles.ribbon}>
+            <span className={styles.ribbonText}>Fique ligado!</span>
+          </div>
+
           <div className={styles.header}>
             <div className={styles.iconCircle} aria-hidden="true">
               <svg
